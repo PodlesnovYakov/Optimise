@@ -1,0 +1,49 @@
+\doxysection{C\+:/\+Users/30041203/source/repos/\+Optimization Programm/\+Abstr\+Stop.h}
+\hypertarget{_abstr_stop_8h_source}{}\label{_abstr_stop_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }vec\ =\ std::vector<double>;}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_abstr_stop}{AbstrStop}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ Stop()\ =\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ SetParams(vec\&\ \_grad,\ vec\&\ \_prevpoint,\ vec\&\ \_curpoint,\ \textcolor{keywordtype}{double}\ \_fprev,\ \textcolor{keywordtype}{double}\ \_fcur,\textcolor{keywordtype}{int}\ \_kcur)\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ Setcur(\_curpoint);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ Setprev(\_prevpoint);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ Setgrad(\_grad);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ Setfcur(\_fcur);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ Setfprev(\_fprev);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ Setkcur(\_kcur);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ Setcur(vec\&\ \_curpoint)\ \{\ \mbox{\hyperlink{class_abstr_stop_ad046b9b088c337a240604f0a9f894e53}{curpoint}}\ =\ \_curpoint;\ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ Setprev(vec\&\ \_prevpoint)\ \{\ \mbox{\hyperlink{class_abstr_stop_acf563d70bb13cb25422f42662e71d3cc}{prevpoint}}\ =\ \_prevpoint;\ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ Setgrad(vec\&\ \_grad)\ \{\ \mbox{\hyperlink{class_abstr_stop_a5c185040e8cec18578ab1f18049773a5}{grad}}\ =\ \_grad;\ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ Setfcur(\textcolor{keywordtype}{double}\ \_fcur)\ \{\mbox{\hyperlink{class_abstr_stop_ab132c7e3ca316541f81b5384c5f725cf}{fcur}}\ =\ \_fcur;\}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ Setfprev(\textcolor{keywordtype}{double}\ \_fprev)\ \{\mbox{\hyperlink{class_abstr_stop_a6c713f1bc603fa70d4888908b3981617}{fprev}}\ =\ \_fprev;\}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ Setkmax(\textcolor{keywordtype}{int}\ \_kmax)\ \{\ \mbox{\hyperlink{class_abstr_stop_a46eeceb51c752ee08574991e47b52838}{kmax}}\ =\ \_kmax;\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ Setkcur(\textcolor{keywordtype}{int}\ \_kcur)\ \{\ \mbox{\hyperlink{class_abstr_stop_a9e49eee56968c441edc2bc2495a48d91}{kcur}}\ =\ \_kcur;\ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ Seteps(\textcolor{keywordtype}{double}\ \_eps)\ \{\ \mbox{\hyperlink{class_abstr_stop_a77629de2c2e71ddf3d9dad53c22f0897}{eps}}\ =\ \_eps;\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ vec\&\ GetPoint()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_abstr_stop_ad046b9b088c337a240604f0a9f894e53}{curpoint}};\ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ GetK()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_abstr_stop_a9e49eee56968c441edc2bc2495a48d91}{kcur}};\ \}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ GetKmax()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_abstr_stop_a46eeceb51c752ee08574991e47b52838}{kmax}};\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ <summary>}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_abstr_stop_a0d7a38efd5af9e288de74977bbd70dbd}{norma}}(vec\&\ f);}
+\DoxyCodeLine{00038\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00039\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_abstr_stop_a77629de2c2e71ddf3d9dad53c22f0897}{eps}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_abstr_stop_a46eeceb51c752ee08574991e47b52838}{kmax}};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_abstr_stop_a9e49eee56968c441edc2bc2495a48d91}{kcur}};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_abstr_stop_a6c713f1bc603fa70d4888908b3981617}{fprev}};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_abstr_stop_ab132c7e3ca316541f81b5384c5f725cf}{fcur}};}
+\DoxyCodeLine{00051\ \ \ \ \ vec\ \mbox{\hyperlink{class_abstr_stop_acf563d70bb13cb25422f42662e71d3cc}{prevpoint}};}
+\DoxyCodeLine{00053\ \ \ \ \ vec\ \mbox{\hyperlink{class_abstr_stop_ad046b9b088c337a240604f0a9f894e53}{curpoint}};}
+\DoxyCodeLine{00055\ \ \ \ \ vec\ \mbox{\hyperlink{class_abstr_stop_a5c185040e8cec18578ab1f18049773a5}{grad}};}
+\DoxyCodeLine{00056\ \ \ \ \ }
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+
+\end{DoxyCode}

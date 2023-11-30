@@ -1,0 +1,75 @@
+\doxysection{Val\+Fstop Class Reference}
+\hypertarget{class_val_fstop}{}\label{class_val_fstop}\index{ValFstop@{ValFstop}}
+
+
+Класс-\/наследник класса \doxylink{class_abstr_stop}{Abstr\+Stop}, отвечающий за остановку по двум ближайшим значениям функции в случайном поиске.  
+
+
+
+
+{\ttfamily \#include $<$Val\+Fstop.\+h$>$}
+
+Inheritance diagram for Val\+Fstop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_val_fstop}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_abstr_stop}{Abstr\+Stop}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Params} (vec \&\+\_\+grad, vec \&\+\_\+prevpoint, vec \&\+\_\+curpoint, double \+\_\+fprev, double \+\_\+fcur, int \+\_\+kcur)
+\item 
+void {\bfseries Setcur} (vec \&\+\_\+curpoint)
+\item 
+void {\bfseries Setprev} (vec \&\+\_\+prevpoint)
+\item 
+void {\bfseries Setgrad} (vec \&\+\_\+grad)
+\item 
+void {\bfseries Setfcur} (double \+\_\+fcur)
+\item 
+void {\bfseries Setfprev} (double \+\_\+fprev)
+\item 
+void {\bfseries Setkmax} (int \+\_\+kmax)
+\item 
+void {\bfseries Setkcur} (int \+\_\+kcur)
+\item 
+void {\bfseries Seteps} (double \+\_\+eps)
+\item 
+vec \& {\bfseries Get\+Point} ()
+\item 
+int {\bfseries GetK} ()
+\item 
+int {\bfseries Get\+Kmax} ()
+\item 
+double \mbox{\hyperlink{class_abstr_stop_a0d7a38efd5af9e288de74977bbd70dbd}{norma}} (vec \&f)
+\begin{DoxyCompactList}\small\item\em Данный метод ищет эвклидову норму вектора \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_abstr_stop}{Abstr\+Stop}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries eps}
+\begin{DoxyCompactList}\small\item\em эпсилон, меньше которого произойдёт остановка \end{DoxyCompactList}\item 
+int {\bfseries kmax}
+\begin{DoxyCompactList}\small\item\em максимальное количество итераций \end{DoxyCompactList}\item 
+int {\bfseries kcur}
+\begin{DoxyCompactList}\small\item\em текущее значение итерации \end{DoxyCompactList}\item 
+double {\bfseries fprev}
+\begin{DoxyCompactList}\small\item\em значение функции в предыдущей найденной точке \end{DoxyCompactList}\item 
+double {\bfseries fcur}
+\begin{DoxyCompactList}\small\item\em значение функции в текущей найденной точке \end{DoxyCompactList}\item 
+vec {\bfseries prevpoint}
+\begin{DoxyCompactList}\small\item\em предыдущая точка \end{DoxyCompactList}\item 
+vec {\bfseries curpoint}
+\begin{DoxyCompactList}\small\item\em текущая точка \end{DoxyCompactList}\item 
+vec {\bfseries grad}
+\begin{DoxyCompactList}\small\item\em значение градиента в текущей точке \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/наследник класса \doxylink{class_abstr_stop}{Abstr\+Stop}, отвечающий за остановку по двум ближайшим значениям функции в случайном поиске. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Val\+Fstop.\+h\item 
+C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Val\+Fstop.\+cpp\end{DoxyCompactItemize}

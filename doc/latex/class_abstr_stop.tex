@@ -1,0 +1,115 @@
+\doxysection{Abstr\+Stop Class Reference}
+\hypertarget{class_abstr_stop}{}\label{class_abstr_stop}\index{AbstrStop@{AbstrStop}}
+
+
+Родительский класс -\/ остановка, который отвечает за остановку для нахождения минимума. summary\texorpdfstring{$>$}{>}  
+
+
+
+
+{\ttfamily \#include $<$Abstr\+Stop.\+h$>$}
+
+Inheritance diagram for Abstr\+Stop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_abstr_stop}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_abstr_stop_a3cb0ca62e80b5cb9a86bf58c251ce643}\label{class_abstr_stop_a3cb0ca62e80b5cb9a86bf58c251ce643} 
+virtual bool {\bfseries Stop} ()=0
+\item 
+\Hypertarget{class_abstr_stop_a8b704fe02e5eac53e07a1d718d26deba}\label{class_abstr_stop_a8b704fe02e5eac53e07a1d718d26deba} 
+void {\bfseries Set\+Params} (vec \&\+\_\+grad, vec \&\+\_\+prevpoint, vec \&\+\_\+curpoint, double \+\_\+fprev, double \+\_\+fcur, int \+\_\+kcur)
+\item 
+\Hypertarget{class_abstr_stop_a244a753052d29aab3ed4584bfbfb8d06}\label{class_abstr_stop_a244a753052d29aab3ed4584bfbfb8d06} 
+void {\bfseries Setcur} (vec \&\+\_\+curpoint)
+\item 
+\Hypertarget{class_abstr_stop_ae6ef6ca28063b2678a4a2e61bbb4ecfd}\label{class_abstr_stop_ae6ef6ca28063b2678a4a2e61bbb4ecfd} 
+void {\bfseries Setprev} (vec \&\+\_\+prevpoint)
+\item 
+\Hypertarget{class_abstr_stop_abaf5baac4388236b544b9683242dd97a}\label{class_abstr_stop_abaf5baac4388236b544b9683242dd97a} 
+void {\bfseries Setgrad} (vec \&\+\_\+grad)
+\item 
+\Hypertarget{class_abstr_stop_a109a854962147c0bc5cde6c781498724}\label{class_abstr_stop_a109a854962147c0bc5cde6c781498724} 
+void {\bfseries Setfcur} (double \+\_\+fcur)
+\item 
+\Hypertarget{class_abstr_stop_aaf6aa823bb038303bdaac363a83da287}\label{class_abstr_stop_aaf6aa823bb038303bdaac363a83da287} 
+void {\bfseries Setfprev} (double \+\_\+fprev)
+\item 
+\Hypertarget{class_abstr_stop_a485b3186a9c1e82c0bb337ecd501e76a}\label{class_abstr_stop_a485b3186a9c1e82c0bb337ecd501e76a} 
+void {\bfseries Setkmax} (int \+\_\+kmax)
+\item 
+\Hypertarget{class_abstr_stop_a90c2d4abf1bbf573855b003d02a373be}\label{class_abstr_stop_a90c2d4abf1bbf573855b003d02a373be} 
+void {\bfseries Setkcur} (int \+\_\+kcur)
+\item 
+\Hypertarget{class_abstr_stop_ad5de9a0ae17bcb31cae097390b5382b0}\label{class_abstr_stop_ad5de9a0ae17bcb31cae097390b5382b0} 
+void {\bfseries Seteps} (double \+\_\+eps)
+\item 
+\Hypertarget{class_abstr_stop_a434232066d3948f0b0388b94581f0200}\label{class_abstr_stop_a434232066d3948f0b0388b94581f0200} 
+vec \& {\bfseries Get\+Point} ()
+\item 
+\Hypertarget{class_abstr_stop_a7471e38cca2701cc143c21a2136cdf49}\label{class_abstr_stop_a7471e38cca2701cc143c21a2136cdf49} 
+int {\bfseries GetK} ()
+\item 
+\Hypertarget{class_abstr_stop_a381bc97a8ad518f8d0aeb53bbc550808}\label{class_abstr_stop_a381bc97a8ad518f8d0aeb53bbc550808} 
+int {\bfseries Get\+Kmax} ()
+\item 
+double \mbox{\hyperlink{class_abstr_stop_a0d7a38efd5af9e288de74977bbd70dbd}{norma}} (vec \&f)
+\begin{DoxyCompactList}\small\item\em Данный метод ищет эвклидову норму вектора \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_abstr_stop_a77629de2c2e71ddf3d9dad53c22f0897}\label{class_abstr_stop_a77629de2c2e71ddf3d9dad53c22f0897} 
+double {\bfseries eps}
+\begin{DoxyCompactList}\small\item\em эпсилон, меньше которого произойдёт остановка \end{DoxyCompactList}\item 
+\Hypertarget{class_abstr_stop_a46eeceb51c752ee08574991e47b52838}\label{class_abstr_stop_a46eeceb51c752ee08574991e47b52838} 
+int {\bfseries kmax}
+\begin{DoxyCompactList}\small\item\em максимальное количество итераций \end{DoxyCompactList}\item 
+\Hypertarget{class_abstr_stop_a9e49eee56968c441edc2bc2495a48d91}\label{class_abstr_stop_a9e49eee56968c441edc2bc2495a48d91} 
+int {\bfseries kcur}
+\begin{DoxyCompactList}\small\item\em текущее значение итерации \end{DoxyCompactList}\item 
+\Hypertarget{class_abstr_stop_a6c713f1bc603fa70d4888908b3981617}\label{class_abstr_stop_a6c713f1bc603fa70d4888908b3981617} 
+double {\bfseries fprev}
+\begin{DoxyCompactList}\small\item\em значение функции в предыдущей найденной точке \end{DoxyCompactList}\item 
+\Hypertarget{class_abstr_stop_ab132c7e3ca316541f81b5384c5f725cf}\label{class_abstr_stop_ab132c7e3ca316541f81b5384c5f725cf} 
+double {\bfseries fcur}
+\begin{DoxyCompactList}\small\item\em значение функции в текущей найденной точке \end{DoxyCompactList}\item 
+\Hypertarget{class_abstr_stop_acf563d70bb13cb25422f42662e71d3cc}\label{class_abstr_stop_acf563d70bb13cb25422f42662e71d3cc} 
+vec {\bfseries prevpoint}
+\begin{DoxyCompactList}\small\item\em предыдущая точка \end{DoxyCompactList}\item 
+\Hypertarget{class_abstr_stop_ad046b9b088c337a240604f0a9f894e53}\label{class_abstr_stop_ad046b9b088c337a240604f0a9f894e53} 
+vec {\bfseries curpoint}
+\begin{DoxyCompactList}\small\item\em текущая точка \end{DoxyCompactList}\item 
+\Hypertarget{class_abstr_stop_a5c185040e8cec18578ab1f18049773a5}\label{class_abstr_stop_a5c185040e8cec18578ab1f18049773a5} 
+vec {\bfseries grad}
+\begin{DoxyCompactList}\small\item\em значение градиента в текущей точке \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Родительский класс -\/ остановка, который отвечает за остановку для нахождения минимума. summary\texorpdfstring{$>$}{>} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstr_stop_a0d7a38efd5af9e288de74977bbd70dbd}\label{class_abstr_stop_a0d7a38efd5af9e288de74977bbd70dbd} 
+\index{AbstrStop@{AbstrStop}!norma@{norma}}
+\index{norma@{norma}!AbstrStop@{AbstrStop}}
+\doxysubsubsection{\texorpdfstring{norma()}{norma()}}
+{\footnotesize\ttfamily double Abstr\+Stop\+::norma (\begin{DoxyParamCaption}\item[{vec \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Данный метод ищет эвклидову норму вектора 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ вектор, от которого берём эвклидову норму \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Abstr\+Stop.\+h\item 
+C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Abstr\+Stop.\+cpp\end{DoxyCompactItemize}

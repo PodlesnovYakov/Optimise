@@ -1,0 +1,24 @@
+\doxysection{C\+:/\+Users/30041203/source/repos/\+Optimization Programm/\+Det\+Opt.h}
+\hypertarget{_det_opt_8h_source}{}\label{_det_opt_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AbstrOptimiser.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}VectorOper.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_det_opt}{DetOpt}}\ :}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_abstr_optimiser}{AbstrOptimiser}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_det_opt_aa74f1b8bf1b7bf94b1f5e2cf645e4710}{optimise}}(vec\&\ point,\ \mbox{\hyperlink{class_abstr_func}{AbstrFunc}}*\ Func,\ \mbox{\hyperlink{class_abstr_stop}{AbstrStop}}*\ S,\ \mbox{\hyperlink{class_rect_area}{RectArea}}\&\ Shape);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ <summary>}}
+\DoxyCodeLine{00020\ \ \ \ \ vec\ \mbox{\hyperlink{class_det_opt_a7e05250a2321531db326061a23a8f916}{CalcGradient}}(vec\&\ point,\ \mbox{\hyperlink{class_abstr_func}{AbstrFunc}}\&\ Func,\ \mbox{\hyperlink{class_rect_area}{RectArea}}\&\ Shape);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ <summary>}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_det_opt_a23920cdcf918151d374775723062b3d8}{GoldenSelection}}(\textcolor{keywordtype}{double}\ a,\ \textcolor{keywordtype}{double}\ b,\ vec\&\ gradient,\ vec\&\ point,\ \mbox{\hyperlink{class_abstr_func}{AbstrFunc}}*\ Func);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ <summary>}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_det_opt_a102b8132371f4c0504fc1973bfe912f8}{CountB}}(vec\&\ point,\ vec\&\ gradient,\ \mbox{\hyperlink{class_rect_area}{RectArea}}\&\ Shape);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+
+\end{DoxyCode}

@@ -1,0 +1,126 @@
+\doxysection{Det\+Opt Class Reference}
+\hypertarget{class_det_opt}{}\label{class_det_opt}\index{DetOpt@{DetOpt}}
+
+
+Класс-\/наследник класса \doxylink{class_abstr_optimiser}{Abstr\+Optimiser}, выполняющий роль нахождения минимума функции с помощью градиентного спуска.  
+
+
+
+
+{\ttfamily \#include $<$Det\+Opt.\+h$>$}
+
+Inheritance diagram for Det\+Opt\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_det_opt}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_det_opt_aa74f1b8bf1b7bf94b1f5e2cf645e4710}{optimise}} (vec \&point, \mbox{\hyperlink{class_abstr_func}{Abstr\+Func}} \texorpdfstring{$\ast$}{*}Func, \mbox{\hyperlink{class_abstr_stop}{Abstr\+Stop}} \texorpdfstring{$\ast$}{*}S, \mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&Shape)
+\begin{DoxyCompactList}\small\item\em Данный метод предназначен для нахождения минимума n-\/мерной функции. \end{DoxyCompactList}\item 
+vec \mbox{\hyperlink{class_det_opt_a7e05250a2321531db326061a23a8f916}{Calc\+Gradient}} (vec \&point, \mbox{\hyperlink{class_abstr_func}{Abstr\+Func}} \&Func, \mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&Shape)
+\begin{DoxyCompactList}\small\item\em Данный метод считает численно градиент функции в точке. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_det_opt_a23920cdcf918151d374775723062b3d8}{Golden\+Selection}} (double a, double b, vec \&gradient, vec \&point, \mbox{\hyperlink{class_abstr_func}{Abstr\+Func}} \texorpdfstring{$\ast$}{*}Func)
+\begin{DoxyCompactList}\small\item\em Данный метод (золотое сечение) считает следующий шаг направления градиентного спуска. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_det_opt_a102b8132371f4c0504fc1973bfe912f8}{CountB}} (vec \&point, vec \&gradient, \mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&Shape)
+\begin{DoxyCompactList}\small\item\em Данный метод находит конец интервал, в котором ищем следующий шаг направления градиентного спуска. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/наследник класса \doxylink{class_abstr_optimiser}{Abstr\+Optimiser}, выполняющий роль нахождения минимума функции с помощью градиентного спуска. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_det_opt_a7e05250a2321531db326061a23a8f916}\label{class_det_opt_a7e05250a2321531db326061a23a8f916} 
+\index{DetOpt@{DetOpt}!CalcGradient@{CalcGradient}}
+\index{CalcGradient@{CalcGradient}!DetOpt@{DetOpt}}
+\doxysubsubsection{\texorpdfstring{CalcGradient()}{CalcGradient()}}
+{\footnotesize\ttfamily vec Det\+Opt\+::\+Calc\+Gradient (\begin{DoxyParamCaption}\item[{vec \&}]{point,  }\item[{\mbox{\hyperlink{class_abstr_func}{Abstr\+Func}} \&}]{Func,  }\item[{\mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&}]{Shape }\end{DoxyParamCaption})}
+
+
+
+Данный метод считает численно градиент функции в точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & -\/ точка, в которой считаем градиент. \\
+\hline
+{\em Func} & -\/ функция, градиент в точке которой ищем. \\
+\hline
+{\em Shape} & -\/ параллелепипед. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_det_opt_a102b8132371f4c0504fc1973bfe912f8}\label{class_det_opt_a102b8132371f4c0504fc1973bfe912f8} 
+\index{DetOpt@{DetOpt}!CountB@{CountB}}
+\index{CountB@{CountB}!DetOpt@{DetOpt}}
+\doxysubsubsection{\texorpdfstring{CountB()}{CountB()}}
+{\footnotesize\ttfamily double Det\+Opt\+::\+CountB (\begin{DoxyParamCaption}\item[{vec \&}]{point,  }\item[{vec \&}]{gradient,  }\item[{\mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&}]{Shape }\end{DoxyParamCaption})}
+
+
+
+Данный метод находит конец интервал, в котором ищем следующий шаг направления градиентного спуска. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & -\/ текущая точка направления. \\
+\hline
+{\em gradient} & -\/ градиент, посчитанный в точке. \\
+\hline
+{\em Shape} & -\/ параллелепипед. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_det_opt_a23920cdcf918151d374775723062b3d8}\label{class_det_opt_a23920cdcf918151d374775723062b3d8} 
+\index{DetOpt@{DetOpt}!GoldenSelection@{GoldenSelection}}
+\index{GoldenSelection@{GoldenSelection}!DetOpt@{DetOpt}}
+\doxysubsubsection{\texorpdfstring{GoldenSelection()}{GoldenSelection()}}
+{\footnotesize\ttfamily double Det\+Opt\+::\+Golden\+Selection (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{vec \&}]{gradient,  }\item[{vec \&}]{point,  }\item[{\mbox{\hyperlink{class_abstr_func}{Abstr\+Func}} \texorpdfstring{$\ast$}{*}}]{Func }\end{DoxyParamCaption})}
+
+
+
+Данный метод (золотое сечение) считает следующий шаг направления градиентного спуска. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ начало интервала, в котором ищем следующий шаг направления градиентного спуска. \\
+\hline
+{\em b} & -\/ конец интервала, в котором ищем следующий шаг направления градиентного спуска. \\
+\hline
+{\em gradient} & -\/ градиент, посчитанный в точке. \\
+\hline
+{\em point} & -\/ текущая точка направления. \\
+\hline
+{\em Func} & -\/ функция, которую минизируем. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_det_opt_aa74f1b8bf1b7bf94b1f5e2cf645e4710}\label{class_det_opt_aa74f1b8bf1b7bf94b1f5e2cf645e4710} 
+\index{DetOpt@{DetOpt}!optimise@{optimise}}
+\index{optimise@{optimise}!DetOpt@{DetOpt}}
+\doxysubsubsection{\texorpdfstring{optimise()}{optimise()}}
+{\footnotesize\ttfamily void Det\+Opt\+::optimise (\begin{DoxyParamCaption}\item[{vec \&}]{point,  }\item[{\mbox{\hyperlink{class_abstr_func}{Abstr\+Func}} \texorpdfstring{$\ast$}{*}}]{Func,  }\item[{\mbox{\hyperlink{class_abstr_stop}{Abstr\+Stop}} \texorpdfstring{$\ast$}{*}}]{S,  }\item[{\mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&}]{Shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Данный метод предназначен для нахождения минимума n-\/мерной функции. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & -\/ начальная точка, от которой начнется поиск. \\
+\hline
+{\em Func} & -\/ функция, минимум которой мы ищем. \\
+\hline
+{\em S} & -\/ условие, по которому будет остановка оптимизатора. \\
+\hline
+{\em Shape} & -\/ n-\/мерный параллелепипед. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstr_optimiser_ae4d677a4a7ad5caf8d9a8addf12e84b1}{Abstr\+Optimiser}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Det\+Opt.\+h\item 
+C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Det\+Opt.\+cpp\end{DoxyCompactItemize}

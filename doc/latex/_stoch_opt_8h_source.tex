@@ -1,0 +1,37 @@
+\doxysection{C\+:/\+Users/30041203/source/repos/\+Optimization Programm/\+Stoch\+Opt.h}
+\hypertarget{_stoch_opt_8h_source}{}\label{_stoch_opt_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AbstrOptimiser.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}VectorOper.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{extern}\ std::mt19937\ gen;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_stoch_opt}{StochOpt}}\ :}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_abstr_optimiser}{AbstrOptimiser}}}
+\DoxyCodeLine{00012\ \ \ \ \ }
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_stoch_opt}{StochOpt}}(\textcolor{keywordtype}{double}\ \_alpha,\ \textcolor{keywordtype}{double}\ \_p,\ vec\&\ \_delta)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ alpha\ =\ \_alpha;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ delta.resize(\_delta.size());}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ p\ =\ \_p;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \_delta.size();\ ++i)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ delta[i]\ =\ \_delta[i];}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_stoch_opt_a8f9f1e4f006444d36ff24f91c1bf9a50}{optimise}}(vec\&\ point,\ \mbox{\hyperlink{class_abstr_func}{AbstrFunc}}*\ Func,\ \mbox{\hyperlink{class_abstr_stop}{AbstrStop}}*\ S,\ \mbox{\hyperlink{class_rect_area}{RectArea}}\&\ Shape);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ <summary>}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_stoch_opt_aa12e86c70aecf83ab39ca242b7aa7c67}{intersection}}(vec\&\ Bup,\ vec\&\ Bdown,\ \mbox{\hyperlink{class_rect_area}{RectArea}}\&\ Shape);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ <summary>}}
+\DoxyCodeLine{00037\ \ \ \ \ vec\ \mbox{\hyperlink{class_stoch_opt_ab8f0aadb7645a91d3b1ceb998b31b928}{ModelPoint}}(vec\&\ Bdown,\ vec\&\ Bup);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ alpha;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ p;}
+\DoxyCodeLine{00045\ \ \ \ \ vec\ delta;}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+
+\end{DoxyCode}
