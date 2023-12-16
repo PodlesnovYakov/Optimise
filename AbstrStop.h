@@ -3,7 +3,7 @@
 using vec = std::vector<double>;
 
 /// <summary>
-///	\brief Родительский класс - остановка, который отвечает за остановку для нахождения минимума.
+///	\brief The parent class is stop, which is responsible for stopping to find the minimum.
 ///<summary>
 class AbstrStop
 {
@@ -29,29 +29,29 @@ public:
     vec& GetPoint() { return curpoint; }
     int GetK() { return kcur; }
     int GetKmax() { return kmax; }
-
+    ~AbstrStop(){}
     // <summary>
-/// \brief Данный метод ищет эвклидову норму вектора
-/// \param f - вектор, эвклидову норму которого хотим найти
+/// \brief This method searches for the Euclidean norm of the vector
+/// \param f is the vector whose Euclidean norm we want to find
 /// </summary>
     double norma(vec& f);
 protected:
     
-    /// эпсилон, меньше которого произойдёт остановка
+    /// epsilon, less than which the stop occurs
     double eps;
-    /// максимальное количество итераций
+    /// maximum number of iterations
     int kmax;
-    /// текущее значение итерации
+    /// current iteration value
     int kcur;
-    /// значение функции в предыдущей найденной точке
+    /// the value of the function at the previous found point
     double fprev;
-    /// значение функции в текущей найденной точке
+    /// function value at the current found point
     double fcur;
-    /// предыдущая точка
+    /// previous point
     vec prevpoint;
-    /// текущая точка
+    /// current point
     vec curpoint;
-    /// значение градиента в текущей точке
+    /// gradient value at the current point
     vec grad;
     
 };

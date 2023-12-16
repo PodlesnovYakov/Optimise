@@ -2,7 +2,7 @@
 \hypertarget{class_stoch_opt}{}\label{class_stoch_opt}\index{StochOpt@{StochOpt}}
 
 
-Класс-\/наследник класса \doxylink{class_abstr_optimiser}{Abstr\+Optimiser}, выполняющий роль нахождения минимума функции с помощью случайного поиска.  
+A descendant class of the \doxylink{class_abstr_optimiser}{Abstr\+Optimiser} class, which performs the role of finding the minimum of a function using a random search.  
 
 
 
@@ -22,15 +22,15 @@ Inheritance diagram for Stoch\+Opt\+:\begin{figure}[H]
 {\bfseries Stoch\+Opt} (double \+\_\+alpha, double \+\_\+p, vec \&\+\_\+delta)
 \item 
 void \mbox{\hyperlink{class_stoch_opt_a8f9f1e4f006444d36ff24f91c1bf9a50}{optimise}} (vec \&point, \mbox{\hyperlink{class_abstr_func}{Abstr\+Func}} \texorpdfstring{$\ast$}{*}Func, \mbox{\hyperlink{class_abstr_stop}{Abstr\+Stop}} \texorpdfstring{$\ast$}{*}S, \mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&Shape)
-\begin{DoxyCompactList}\small\item\em Данный метод предназначен для нахождения минимума n-\/мерной функции. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This method is designed to find the minimum of an n-\/dimensional function. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_stoch_opt_aa12e86c70aecf83ab39ca242b7aa7c67}{intersection}} (vec \&Bup, vec \&Bdown, \mbox{\hyperlink{class_rect_area}{Rect\+Area}} \&Shape)
-\begin{DoxyCompactList}\small\item\em Данный метод находит пересечение дельта-\/окрестности точки и параллелепипеда. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This method finds the intersection of the delta neighborhood of a point and a parallelepiped. \end{DoxyCompactList}\item 
 vec \mbox{\hyperlink{class_stoch_opt_ab8f0aadb7645a91d3b1ceb998b31b928}{Model\+Point}} (vec \&Bdown, vec \&Bup)
-\begin{DoxyCompactList}\small\item\em Данный метод моделирует равномерно точку в пересечении дельта-\/окрестности точки и параллелепипеда. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method uniformly models a point at the intersection of the delta neighborhood of a point and a parallelepiped. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Класс-\/наследник класса \doxylink{class_abstr_optimiser}{Abstr\+Optimiser}, выполняющий роль нахождения минимума функции с помощью случайного поиска. 
+A descendant class of the \doxylink{class_abstr_optimiser}{Abstr\+Optimiser} class, which performs the role of finding the minimum of a function using a random search. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_stoch_opt_aa12e86c70aecf83ab39ca242b7aa7c67}\label{class_stoch_opt_aa12e86c70aecf83ab39ca242b7aa7c67} 
@@ -41,15 +41,15 @@ vec \mbox{\hyperlink{class_stoch_opt_ab8f0aadb7645a91d3b1ceb998b31b928}{Model\+P
 
 
 
-Данный метод находит пересечение дельта-\/окрестности точки и параллелепипеда. 
+This method finds the intersection of the delta neighborhood of a point and a parallelepiped. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em Bdown} & -\/ нижняя точка дельта-\/окрестности. \\
+{\em Bdown} & is the lowest point of the delta neighborhood. \\
 \hline
-{\em Bup} & -\/ верхняя точка дельта-\/окрестности. \\
+{\em Bup} & is the highest point of the delta neighborhood. \\
 \hline
-{\em Shape} & -\/ параллелепипед. \\
+{\em Shape} & -\/ parallelepiped. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_stoch_opt_ab8f0aadb7645a91d3b1ceb998b31b928}\label{class_stoch_opt_ab8f0aadb7645a91d3b1ceb998b31b928} 
@@ -60,13 +60,13 @@ vec \mbox{\hyperlink{class_stoch_opt_ab8f0aadb7645a91d3b1ceb998b31b928}{Model\+P
 
 
 
-Данный метод моделирует равномерно точку в пересечении дельта-\/окрестности точки и параллелепипеда. 
+This method uniformly models a point at the intersection of the delta neighborhood of a point and a parallelepiped. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em Bdown} & -\/ нижняя точка пересечения. \\
+{\em Bdown} & -\/ the lowest point of intersection. \\
 \hline
-{\em Bup} & -\/ верхняя точка пересечения. \\
+{\em Bup} & is the upper intersection point. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_stoch_opt_a8f9f1e4f006444d36ff24f91c1bf9a50}\label{class_stoch_opt_a8f9f1e4f006444d36ff24f91c1bf9a50} 
@@ -77,17 +77,17 @@ vec \mbox{\hyperlink{class_stoch_opt_ab8f0aadb7645a91d3b1ceb998b31b928}{Model\+P
 
 
 
-Данный метод предназначен для нахождения минимума n-\/мерной функции. 
+This method is designed to find the minimum of an n-\/dimensional function. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em point} & -\/ начальная точка, от которой начнется поиск. \\
+{\em point} & -\/ the starting point from which the search will begin. \\
 \hline
-{\em Func} & -\/ функция, минимум которой мы ищем. \\
+{\em Func} & is the minimum function we are looking for. \\
 \hline
-{\em S} & -\/ условие, по которому будет остановка оптимизатора. \\
+{\em S} & is the condition that will cause the optimizer to stop. \\
 \hline
-{\em Shape} & -\/ n-\/мерный параллелепипед. \\
+{\em Shape} & is an n-\/dimensional parallelepiped. \\
 \hline
 \end{DoxyParams}
 
@@ -98,5 +98,5 @@ Implements \mbox{\hyperlink{class_abstr_optimiser_ae4d677a4a7ad5caf8d9a8addf12e8
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Stoch\+Opt.\+h\item 
-C\+:/\+Users/30041203/source/repos/\+Optimization Programm/Stoch\+Opt.\+cpp\end{DoxyCompactItemize}
+Stoch\+Opt.\+h\item 
+Stoch\+Opt.\+cpp\end{DoxyCompactItemize}

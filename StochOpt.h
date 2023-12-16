@@ -4,7 +4,7 @@
 #include <random>
 extern std::mt19937 gen;
 /// <summary>
-///	\brief Класс-наследник класса AbstrOptimiser, выполняющий роль нахождения минимума функции с помощью случайного поиска.
+///	\brief A descendant class of the AbstrOptimiser class, which performs the role of finding the minimum of a function using a random search.
 
 ///<summary>
 class StochOpt :
@@ -23,25 +23,25 @@ public:
     }
     void optimise(vec& point, AbstrFunc* Func, AbstrStop* S, RectArea& Shape);
     // <summary>
-/// \brief Данный метод находит пересечение дельта-окрестности точки и параллелепипеда.
-/// \param Bdown - нижняя точка дельта-окрестности.
-/// \param Bup - верхняя точка дельта-окрестности.
-/// \param Shape - параллелепипед.
+/// \brief This method finds the intersection of the delta neighborhood of a point and a parallelepiped.
+/// \param Bdown is the lowest point of the delta neighborhood.
+/// \param Bup is the highest point of the delta neighborhood.
+/// \param Shape - parallelepiped.
 /// </summary>
     void intersection(vec& Bup, vec& Bdown, RectArea& Shape);
     // <summary>
-/// \brief Данный метод моделирует равномерно точку в пересечении дельта-окрестности точки и параллелепипеда.
-/// \param Bdown - нижняя точка пересечения.
-/// \param Bup - верхняя точка пересечения.
+/// \brief This method uniformly models a point at the intersection of the delta neighborhood of a point and a parallelepiped.
+/// \param Bdown - the lowest point of intersection.
+/// \param Bup is the upper intersection point.
 /// </summary>
     vec ModelPoint(vec& Bdown, vec& Bup);
 
 private:
-    /// Коэффициент, уменьшающий дельта-окрестность точки
+    /// Coefficient that reduces the delta neighborhood of a point
     double alpha;
-    /// Вероятность, с которой моделируем равномерно точку в параллелепипеде
+    /// The probability with which we model a uniform point in a parallelepiped
     double p;
-    /// Дельта-окрестность точки
+    /// Delta neighborhood of a point
     vec delta;
 };
 

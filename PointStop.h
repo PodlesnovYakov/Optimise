@@ -2,8 +2,7 @@
 #include "AbstrStop.h"
 #include "VectorOper.h"
 /// <summary>
-///	\brief  ласс-наследник класса AbstrStop, отвечающий за остановку по двум ближайшим точкам в градиентном спуске.
-
+///	\brief A descendant class of the AbstrStop class, responsible for stopping at the two closest points in gradient descent.
 ///<summary>
 class PointStop :
     public AbstrStop

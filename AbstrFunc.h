@@ -3,15 +3,16 @@
 using vec = std::vector<double>;
 
 /// <summary>
-/// \brief Родительский класс - Функция, который отвечает за имитацию n-мерной функции.
+/// \brief Parent class - Function, which is responsible for simulating an n-dimensional function.
 /// </summary>
 class AbstrFunc
 {
 public:
 	/// <summary>
-/// \brief Данный метод предназначен для взятия значения n-мерной функции в точке.
-/// \param f - точка, в которой будет взято значение функции.
+/// \brief This method is designed to take the value of an n-dimensional function at a point.
+/// \param f is the point at which the function value will be taken.
 /// </summary>
 	virtual double GetValF(vec f)  = 0;
+	~AbstrFunc() {}
 };
 

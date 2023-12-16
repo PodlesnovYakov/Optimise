@@ -1,7 +1,7 @@
 #pragma once
 #include "AbstrStop.h"
 /// <summary>
-///	\brief Класс-наследник класса AbstrStop, отвечающий за остановку по значению градиента в градиентном спуске.
+///	\brief A descendant class of the AbstrStop class, responsible for stopping by the gradient value in gradient descent.
 
 ///<summary>
 class GradStop :

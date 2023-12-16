@@ -1,7 +1,7 @@
 #pragma once
 #include "AbstrStop.h"
 /// <summary>
-///	\brief Класс-наследник класса AbstrStop, отвечающий за остановку по количеству итераций в обоих методах поиска минимума.
+///	\brief A descendant class of the AbstrStop class, responsible for stopping by the number of iterations in both methods of finding the minimum.
 
 ///<summary>
 class StopIter :

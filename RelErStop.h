@@ -1,7 +1,7 @@
 #pragma once
 #include "AbstrStop.h"
 /// <summary>
-///	\brief Класс-наследник класса AbstrStop, отвечающий за остановку по относительной ошибке двух ближайших значений функции в градиентном спуске.
+///	\brief A descendant class of the AbstrStop class, responsible for stopping based on the relative error of the two closest function values in gradient descent.
 
 ///<summary>
 class RelErStop :

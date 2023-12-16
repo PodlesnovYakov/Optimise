@@ -1,7 +1,7 @@
 #pragma once
 #include "AbstrFunc.h"
 /// <summary>
-///	\brief  ласс-наследник класса AbstrFunc, выполн€ющий роль двумерной функции.
+///	\brief The class is a descendant of the AbstrFunc class, acting as a two-dimensional function.
 
 ///<summary>
 class F2 :public AbstrFunc

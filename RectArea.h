@@ -2,7 +2,7 @@
 #include <vector>
 using vec = std::vector<double>;
 /// <summary>
-///	\brief Класс - Параллелепипед, в котором ищется минимум функции.
+///	\brief Class - Parallelepiped, in which the minimum function is sought.
 
 ///<summary>
 class RectArea
@@ -35,11 +35,11 @@ public:
 	vec& GetLower() { return lower_point; }
 	vec& GetUpper() { return upper_point; }
 protected:
-	/// Размер n-мерного параллелепипеда.
+	/// Size of an n-dimensional parallelepiped.
 	int AreaSize;
-	/// Нижняя точка параллелепипеда.
+	/// The lowest point of a parallelepiped.
 	vec lower_point;
-	/// Верхняя точка параллелепипеда.
+	/// The top point of the parallelepiped.
 	vec upper_point;
 };
 
