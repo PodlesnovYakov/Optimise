@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Родительский класс - остановка, который отвечает за остановку для нахождения минимума. summary&gt;  
+<p>The parent class is stop, which is responsible for stopping to find the minimum. summary&gt;  
  <a href="class_abstr_stop.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_abstr_stop_8h_source.html">AbstrStop.h</a>&gt;</code></p>
@@ -87,11 +87,11 @@ Inheritance diagram for AbstrStop:</div>
  <div class="center">
   <img src="class_abstr_stop.png" usemap="#AbstrStop_map" alt=""/>
   <map id="AbstrStop_map" name="AbstrStop_map">
-<area href="class_grad_stop.html" title="Класс-наследник класса AbstrStop, отвечающий за остановку по значению градиента в градиентном спуске." alt="GradStop" shape="rect" coords="0,56,68,80"/>
-<area href="class_point_stop.html" title="Класс-наследник класса AbstrStop, отвечающий за остановку по двум ближайшим точкам в градиентном спус..." alt="PointStop" shape="rect" coords="78,56,146,80"/>
-<area href="class_rel_er_stop.html" title="Класс-наследник класса AbstrStop, отвечающий за остановку по относительной ошибке двух ближайших знач..." alt="RelErStop" shape="rect" coords="156,56,224,80"/>
-<area href="class_stop_iter.html" title="Класс-наследник класса AbstrStop, отвечающий за остановку по количеству итераций в обоих методах поис..." alt="StopIter" shape="rect" coords="234,56,302,80"/>
-<area href="class_val_fstop.html" title="Класс-наследник класса AbstrStop, отвечающий за остановку по двум ближайшим значениям функции в случа..." alt="ValFstop" shape="rect" coords="312,56,380,80"/>
+<area href="class_grad_stop.html" title="A descendant class of the AbstrStop class, responsible for stopping by the gradient value in gradient..." alt="GradStop" shape="rect" coords="0,56,68,80"/>
+<area href="class_point_stop.html" title="A descendant class of the AbstrStop class, responsible for stopping at the two closest points in grad..." alt="PointStop" shape="rect" coords="78,56,146,80"/>
+<area href="class_rel_er_stop.html" title="A descendant class of the AbstrStop class, responsible for stopping based on the relative error of th..." alt="RelErStop" shape="rect" coords="156,56,224,80"/>
+<area href="class_stop_iter.html" title="A descendant class of the AbstrStop class, responsible for stopping by the number of iterations in bo..." alt="StopIter" shape="rect" coords="234,56,302,80"/>
+<area href="class_val_fstop.html" title="A descendant class of the AbstrStop class, responsible for stopping by the two closest function value..." alt="ValFstop" shape="rect" coords="312,56,380,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -137,46 +137,46 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetK</b> ()</td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetKmax</b> ()</td></tr>
 <tr class="separator:a381bc97a8ad518f8d0aeb53bbc550808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7a38efd5af9e288de74977bbd70dbd" id="r_a0d7a38efd5af9e288de74977bbd70dbd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstr_stop.html#a0d7a38efd5af9e288de74977bbd70dbd">norma</a> (vec &amp;f)</td></tr>
-<tr class="memdesc:a0d7a38efd5af9e288de74977bbd70dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод ищет эвклидову норму вектора  <br /></td></tr>
+<tr class="memdesc:a0d7a38efd5af9e288de74977bbd70dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method searches for the Euclidean norm of the vector.  <br /></td></tr>
 <tr class="separator:a0d7a38efd5af9e288de74977bbd70dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a77629de2c2e71ddf3d9dad53c22f0897" id="r_a77629de2c2e71ddf3d9dad53c22f0897"><td class="memItemLeft" align="right" valign="top"><a id="a77629de2c2e71ddf3d9dad53c22f0897" name="a77629de2c2e71ddf3d9dad53c22f0897"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>eps</b></td></tr>
-<tr class="memdesc:a77629de2c2e71ddf3d9dad53c22f0897"><td class="mdescLeft">&#160;</td><td class="mdescRight">эпсилон, меньше которого произойдёт остановка <br /></td></tr>
+<tr class="memdesc:a77629de2c2e71ddf3d9dad53c22f0897"><td class="mdescLeft">&#160;</td><td class="mdescRight">epsilon, less than which the stop occurs <br /></td></tr>
 <tr class="separator:a77629de2c2e71ddf3d9dad53c22f0897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46eeceb51c752ee08574991e47b52838" id="r_a46eeceb51c752ee08574991e47b52838"><td class="memItemLeft" align="right" valign="top"><a id="a46eeceb51c752ee08574991e47b52838" name="a46eeceb51c752ee08574991e47b52838"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>kmax</b></td></tr>
-<tr class="memdesc:a46eeceb51c752ee08574991e47b52838"><td class="mdescLeft">&#160;</td><td class="mdescRight">максимальное количество итераций <br /></td></tr>
+<tr class="memdesc:a46eeceb51c752ee08574991e47b52838"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum number of iterations <br /></td></tr>
 <tr class="separator:a46eeceb51c752ee08574991e47b52838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e49eee56968c441edc2bc2495a48d91" id="r_a9e49eee56968c441edc2bc2495a48d91"><td class="memItemLeft" align="right" valign="top"><a id="a9e49eee56968c441edc2bc2495a48d91" name="a9e49eee56968c441edc2bc2495a48d91"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>kcur</b></td></tr>
-<tr class="memdesc:a9e49eee56968c441edc2bc2495a48d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">текущее значение итерации <br /></td></tr>
+<tr class="memdesc:a9e49eee56968c441edc2bc2495a48d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">current iteration value <br /></td></tr>
 <tr class="separator:a9e49eee56968c441edc2bc2495a48d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c713f1bc603fa70d4888908b3981617" id="r_a6c713f1bc603fa70d4888908b3981617"><td class="memItemLeft" align="right" valign="top"><a id="a6c713f1bc603fa70d4888908b3981617" name="a6c713f1bc603fa70d4888908b3981617"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>fprev</b></td></tr>
-<tr class="memdesc:a6c713f1bc603fa70d4888908b3981617"><td class="mdescLeft">&#160;</td><td class="mdescRight">значение функции в предыдущей найденной точке <br /></td></tr>
+<tr class="memdesc:a6c713f1bc603fa70d4888908b3981617"><td class="mdescLeft">&#160;</td><td class="mdescRight">the value of the function at the previous found point <br /></td></tr>
 <tr class="separator:a6c713f1bc603fa70d4888908b3981617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab132c7e3ca316541f81b5384c5f725cf" id="r_ab132c7e3ca316541f81b5384c5f725cf"><td class="memItemLeft" align="right" valign="top"><a id="ab132c7e3ca316541f81b5384c5f725cf" name="ab132c7e3ca316541f81b5384c5f725cf"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>fcur</b></td></tr>
-<tr class="memdesc:ab132c7e3ca316541f81b5384c5f725cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">значение функции в текущей найденной точке <br /></td></tr>
+<tr class="memdesc:ab132c7e3ca316541f81b5384c5f725cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">function value at the current found point <br /></td></tr>
 <tr class="separator:ab132c7e3ca316541f81b5384c5f725cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf563d70bb13cb25422f42662e71d3cc" id="r_acf563d70bb13cb25422f42662e71d3cc"><td class="memItemLeft" align="right" valign="top"><a id="acf563d70bb13cb25422f42662e71d3cc" name="acf563d70bb13cb25422f42662e71d3cc"></a>
 vec&#160;</td><td class="memItemRight" valign="bottom"><b>prevpoint</b></td></tr>
-<tr class="memdesc:acf563d70bb13cb25422f42662e71d3cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">предыдущая точка <br /></td></tr>
+<tr class="memdesc:acf563d70bb13cb25422f42662e71d3cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">previous point <br /></td></tr>
 <tr class="separator:acf563d70bb13cb25422f42662e71d3cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad046b9b088c337a240604f0a9f894e53" id="r_ad046b9b088c337a240604f0a9f894e53"><td class="memItemLeft" align="right" valign="top"><a id="ad046b9b088c337a240604f0a9f894e53" name="ad046b9b088c337a240604f0a9f894e53"></a>
 vec&#160;</td><td class="memItemRight" valign="bottom"><b>curpoint</b></td></tr>
-<tr class="memdesc:ad046b9b088c337a240604f0a9f894e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">текущая точка <br /></td></tr>
+<tr class="memdesc:ad046b9b088c337a240604f0a9f894e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">current point <br /></td></tr>
 <tr class="separator:ad046b9b088c337a240604f0a9f894e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c185040e8cec18578ab1f18049773a5" id="r_a5c185040e8cec18578ab1f18049773a5"><td class="memItemLeft" align="right" valign="top"><a id="a5c185040e8cec18578ab1f18049773a5" name="a5c185040e8cec18578ab1f18049773a5"></a>
 vec&#160;</td><td class="memItemRight" valign="bottom"><b>grad</b></td></tr>
-<tr class="memdesc:a5c185040e8cec18578ab1f18049773a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">значение градиента в текущей точке <br /></td></tr>
+<tr class="memdesc:a5c185040e8cec18578ab1f18049773a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">gradient value at the current point <br /></td></tr>
 <tr class="separator:a5c185040e8cec18578ab1f18049773a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Родительский класс - остановка, который отвечает за остановку для нахождения минимума. summary&gt; </p>
+<div class="textblock"><p>The parent class is stop, which is responsible for stopping to find the minimum. summary&gt; </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0d7a38efd5af9e288de74977bbd70dbd" name="a0d7a38efd5af9e288de74977bbd70dbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d7a38efd5af9e288de74977bbd70dbd">&#9670;&#160;</a></span>norma()</h2>
@@ -194,10 +194,10 @@ vec&#160;</td><td class="memItemRight" valign="bottom"><b>grad</b></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Данный метод ищет эвклидову норму вектора </p>
+<p>This method searches for the Euclidean norm of the vector. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>- вектор, от которого берём эвклидову норму </td></tr>
+    <tr><td class="paramname">f</td><td>is the vector whose Euclidean norm we want to find </td></tr>
   </table>
   </dd>
 </dl>
@@ -205,8 +205,8 @@ vec&#160;</td><td class="memItemRight" valign="bottom"><b>grad</b></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/30041203/source/repos/Optimization Programm/<a class="el" href="_abstr_stop_8h_source.html">AbstrStop.h</a></li>
-<li>C:/Users/30041203/source/repos/Optimization Programm/<b>AbstrStop.cpp</b></li>
+<li><a class="el" href="_abstr_stop_8h_source.html">AbstrStop.h</a></li>
+<li><b>AbstrStop.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

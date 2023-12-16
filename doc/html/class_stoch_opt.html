@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Класс-наследник класса <a class="el" href="class_abstr_optimiser.html" title="Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции.">AbstrOptimiser</a>, выполняющий роль нахождения минимума функции с помощью случайного поиска.  
+<p>A descendant class of the <a class="el" href="class_abstr_optimiser.html" title="Parent class - Optimizer, which is responsible for finding the minimum of a function.">AbstrOptimiser</a> class, which performs the role of finding the minimum of a function using a random search.  
  <a href="class_stoch_opt.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_stoch_opt_8h_source.html">StochOpt.h</a>&gt;</code></p>
@@ -86,7 +86,7 @@ Inheritance diagram for StochOpt:</div>
  <div class="center">
   <img src="class_stoch_opt.png" usemap="#StochOpt_map" alt=""/>
   <map id="StochOpt_map" name="StochOpt_map">
-<area href="class_abstr_optimiser.html" title="Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции." alt="AbstrOptimiser" shape="rect" coords="0,0,95,24"/>
+<area href="class_abstr_optimiser.html" title="Parent class - Optimizer, which is responsible for finding the minimum of a function." alt="AbstrOptimiser" shape="rect" coords="0,0,95,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -96,17 +96,17 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StochOpt</b> (double _alpha, double _p, vec &amp;_delta)</td></tr>
 <tr class="separator:a95c6c6fa08f2c1e4b0ca55b2ba4766ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f9f1e4f006444d36ff24f91c1bf9a50" id="r_a8f9f1e4f006444d36ff24f91c1bf9a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stoch_opt.html#a8f9f1e4f006444d36ff24f91c1bf9a50">optimise</a> (vec &amp;point, <a class="el" href="class_abstr_func.html">AbstrFunc</a> *Func, <a class="el" href="class_abstr_stop.html">AbstrStop</a> *S, <a class="el" href="class_rect_area.html">RectArea</a> &amp;Shape)</td></tr>
-<tr class="memdesc:a8f9f1e4f006444d36ff24f91c1bf9a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод предназначен для нахождения минимума n-мерной функции.  <br /></td></tr>
+<tr class="memdesc:a8f9f1e4f006444d36ff24f91c1bf9a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is designed to find the minimum of an n-dimensional function.  <br /></td></tr>
 <tr class="separator:a8f9f1e4f006444d36ff24f91c1bf9a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12e86c70aecf83ab39ca242b7aa7c67" id="r_aa12e86c70aecf83ab39ca242b7aa7c67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stoch_opt.html#aa12e86c70aecf83ab39ca242b7aa7c67">intersection</a> (vec &amp;Bup, vec &amp;Bdown, <a class="el" href="class_rect_area.html">RectArea</a> &amp;Shape)</td></tr>
-<tr class="memdesc:aa12e86c70aecf83ab39ca242b7aa7c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод находит пересечение дельта-окрестности точки и параллелепипеда.  <br /></td></tr>
+<tr class="memdesc:aa12e86c70aecf83ab39ca242b7aa7c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method finds the intersection of the delta neighborhood of a point and a parallelepiped.  <br /></td></tr>
 <tr class="separator:aa12e86c70aecf83ab39ca242b7aa7c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f0aadb7645a91d3b1ceb998b31b928" id="r_ab8f0aadb7645a91d3b1ceb998b31b928"><td class="memItemLeft" align="right" valign="top">vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stoch_opt.html#ab8f0aadb7645a91d3b1ceb998b31b928">ModelPoint</a> (vec &amp;Bdown, vec &amp;Bup)</td></tr>
-<tr class="memdesc:ab8f0aadb7645a91d3b1ceb998b31b928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод моделирует равномерно точку в пересечении дельта-окрестности точки и параллелепипеда.  <br /></td></tr>
+<tr class="memdesc:ab8f0aadb7645a91d3b1ceb998b31b928"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method uniformly models a point at the intersection of the delta neighborhood of a point and a parallelepiped.  <br /></td></tr>
 <tr class="separator:ab8f0aadb7645a91d3b1ceb998b31b928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс-наследник класса <a class="el" href="class_abstr_optimiser.html" title="Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции.">AbstrOptimiser</a>, выполняющий роль нахождения минимума функции с помощью случайного поиска. </p>
+<div class="textblock"><p>A descendant class of the <a class="el" href="class_abstr_optimiser.html" title="Parent class - Optimizer, which is responsible for finding the minimum of a function.">AbstrOptimiser</a> class, which performs the role of finding the minimum of a function using a random search. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa12e86c70aecf83ab39ca242b7aa7c67" name="aa12e86c70aecf83ab39ca242b7aa7c67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa12e86c70aecf83ab39ca242b7aa7c67">&#9670;&#160;</a></span>intersection()</h2>
@@ -140,12 +140,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Данный метод находит пересечение дельта-окрестности точки и параллелепипеда. </p>
+<p>This method finds the intersection of the delta neighborhood of a point and a parallelepiped. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Bdown</td><td>- нижняя точка дельта-окрестности. </td></tr>
-    <tr><td class="paramname">Bup</td><td>- верхняя точка дельта-окрестности. </td></tr>
-    <tr><td class="paramname">Shape</td><td>- параллелепипед. </td></tr>
+    <tr><td class="paramname">Bdown</td><td>is the lowest point of the delta neighborhood. </td></tr>
+    <tr><td class="paramname">Bup</td><td>is the highest point of the delta neighborhood. </td></tr>
+    <tr><td class="paramname">Shape</td><td>- parallelepiped. </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,11 +178,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Данный метод моделирует равномерно точку в пересечении дельта-окрестности точки и параллелепипеда. </p>
+<p>This method uniformly models a point at the intersection of the delta neighborhood of a point and a parallelepiped. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Bdown</td><td>- нижняя точка пересечения. </td></tr>
-    <tr><td class="paramname">Bup</td><td>- верхняя точка пересечения. </td></tr>
+    <tr><td class="paramname">Bdown</td><td>- the lowest point of intersection. </td></tr>
+    <tr><td class="paramname">Bup</td><td>is the upper intersection point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -235,13 +235,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Данный метод предназначен для нахождения минимума n-мерной функции. </p>
+<p>This method is designed to find the minimum of an n-dimensional function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>- начальная точка, от которой начнется поиск. </td></tr>
-    <tr><td class="paramname">Func</td><td>- функция, минимум которой мы ищем. </td></tr>
-    <tr><td class="paramname">S</td><td>- условие, по которому будет остановка оптимизатора. </td></tr>
-    <tr><td class="paramname">Shape</td><td>- n-мерный параллелепипед. </td></tr>
+    <tr><td class="paramname">point</td><td>- the starting point from which the search will begin. </td></tr>
+    <tr><td class="paramname">Func</td><td>is the minimum function we are looking for. </td></tr>
+    <tr><td class="paramname">S</td><td>is the condition that will cause the optimizer to stop. </td></tr>
+    <tr><td class="paramname">Shape</td><td>is an n-dimensional parallelepiped. </td></tr>
   </table>
   </dd>
 </dl>
@@ -251,8 +251,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/30041203/source/repos/Optimization Programm/<a class="el" href="_stoch_opt_8h_source.html">StochOpt.h</a></li>
-<li>C:/Users/30041203/source/repos/Optimization Programm/<b>StochOpt.cpp</b></li>
+<li><a class="el" href="_stoch_opt_8h_source.html">StochOpt.h</a></li>
+<li><b>StochOpt.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

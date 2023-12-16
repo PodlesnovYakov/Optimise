@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Optimise: C:/Users/30041203/source/repos/Optimization Programm/AbstrOptimiser.h Source File</title>
+<title>Optimise: AbstrOptimiser.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">C:/Users/30041203/source/repos/Optimization Programm/AbstrOptimiser.h</div></div>
+  <div class="headertitle"><div class="title">AbstrOptimiser.h</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
@@ -87,15 +87,16 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">// &lt;summary&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_abstr_optimiser.html#ae4d677a4a7ad5caf8d9a8addf12e84b1">   18</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_abstr_optimiser.html#ae4d677a4a7ad5caf8d9a8addf12e84b1">optimise</a>(vec&amp; point, <a class="code hl_class" href="class_abstr_func.html">AbstrFunc</a>* Func, <a class="code hl_class" href="class_abstr_stop.html">AbstrStop</a>* S, <a class="code hl_class" href="class_rect_area.html">RectArea</a>&amp; Shape) = 0;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_abstr_optimiser.html">~AbstrOptimiser</a>(){}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="ttc" id="aclass_abstr_func_html"><div class="ttname"><a href="class_abstr_func.html">AbstrFunc</a></div><div class="ttdoc">Родительский класс - Функция, который отвечает за имитацию n-мерной функции.</div><div class="ttdef"><b>Definition</b> AbstrFunc.h:9</div></div>
-<div class="ttc" id="aclass_abstr_optimiser_html"><div class="ttname"><a href="class_abstr_optimiser.html">AbstrOptimiser</a></div><div class="ttdoc">Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции.</div><div class="ttdef"><b>Definition</b> AbstrOptimiser.h:9</div></div>
-<div class="ttc" id="aclass_abstr_optimiser_html_ae4d677a4a7ad5caf8d9a8addf12e84b1"><div class="ttname"><a href="class_abstr_optimiser.html#ae4d677a4a7ad5caf8d9a8addf12e84b1">AbstrOptimiser::optimise</a></div><div class="ttdeci">virtual void optimise(vec &amp;point, AbstrFunc *Func, AbstrStop *S, RectArea &amp;Shape)=0</div><div class="ttdoc">Данный метод предназначен для нахождения минимума n-мерной функции.</div></div>
-<div class="ttc" id="aclass_abstr_stop_html"><div class="ttname"><a href="class_abstr_stop.html">AbstrStop</a></div><div class="ttdoc">Родительский класс - остановка, который отвечает за остановку для нахождения минимума....</div><div class="ttdef"><b>Definition</b> AbstrStop.h:9</div></div>
-<div class="ttc" id="aclass_rect_area_html"><div class="ttname"><a href="class_rect_area.html">RectArea</a></div><div class="ttdoc">Класс - Параллелепипед, в котором ищется минимум функции.</div><div class="ttdef"><b>Definition</b> RectArea.h:9</div></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="ttc" id="aclass_abstr_func_html"><div class="ttname"><a href="class_abstr_func.html">AbstrFunc</a></div><div class="ttdoc">Parent class - Function, which is responsible for simulating an n-dimensional function.</div><div class="ttdef"><b>Definition</b> AbstrFunc.h:9</div></div>
+<div class="ttc" id="aclass_abstr_optimiser_html"><div class="ttname"><a href="class_abstr_optimiser.html">AbstrOptimiser</a></div><div class="ttdoc">Parent class - Optimizer, which is responsible for finding the minimum of a function.</div><div class="ttdef"><b>Definition</b> AbstrOptimiser.h:9</div></div>
+<div class="ttc" id="aclass_abstr_optimiser_html_ae4d677a4a7ad5caf8d9a8addf12e84b1"><div class="ttname"><a href="class_abstr_optimiser.html#ae4d677a4a7ad5caf8d9a8addf12e84b1">AbstrOptimiser::optimise</a></div><div class="ttdeci">virtual void optimise(vec &amp;point, AbstrFunc *Func, AbstrStop *S, RectArea &amp;Shape)=0</div><div class="ttdoc">This method is designed to find the minimum of an n-dimensional function.</div></div>
+<div class="ttc" id="aclass_abstr_stop_html"><div class="ttname"><a href="class_abstr_stop.html">AbstrStop</a></div><div class="ttdoc">The parent class is stop, which is responsible for stopping to find the minimum. summary&gt;</div><div class="ttdef"><b>Definition</b> AbstrStop.h:9</div></div>
+<div class="ttc" id="aclass_rect_area_html"><div class="ttname"><a href="class_rect_area.html">RectArea</a></div><div class="ttdoc">Class - Parallelepiped, in which the minimum function is sought.</div><div class="ttdef"><b>Definition</b> RectArea.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

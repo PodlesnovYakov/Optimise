@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Класс-наследник класса <a class="el" href="class_abstr_optimiser.html" title="Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции.">AbstrOptimiser</a>, выполняющий роль нахождения минимума функции с помощью градиентного спуска.  
+<p>A descendant class of the <a class="el" href="class_abstr_optimiser.html" title="Parent class - Optimizer, which is responsible for finding the minimum of a function.">AbstrOptimiser</a> class, which performs the role of finding the minimum of a function using gradient descent.  
  <a href="class_det_opt.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_det_opt_8h_source.html">DetOpt.h</a>&gt;</code></p>
@@ -86,27 +86,27 @@ Inheritance diagram for DetOpt:</div>
  <div class="center">
   <img src="class_det_opt.png" usemap="#DetOpt_map" alt=""/>
   <map id="DetOpt_map" name="DetOpt_map">
-<area href="class_abstr_optimiser.html" title="Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции." alt="AbstrOptimiser" shape="rect" coords="0,0,95,24"/>
+<area href="class_abstr_optimiser.html" title="Parent class - Optimizer, which is responsible for finding the minimum of a function." alt="AbstrOptimiser" shape="rect" coords="0,0,95,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa74f1b8bf1b7bf94b1f5e2cf645e4710" id="r_aa74f1b8bf1b7bf94b1f5e2cf645e4710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_det_opt.html#aa74f1b8bf1b7bf94b1f5e2cf645e4710">optimise</a> (vec &amp;point, <a class="el" href="class_abstr_func.html">AbstrFunc</a> *Func, <a class="el" href="class_abstr_stop.html">AbstrStop</a> *S, <a class="el" href="class_rect_area.html">RectArea</a> &amp;Shape)</td></tr>
-<tr class="memdesc:aa74f1b8bf1b7bf94b1f5e2cf645e4710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод предназначен для нахождения минимума n-мерной функции.  <br /></td></tr>
+<tr class="memdesc:aa74f1b8bf1b7bf94b1f5e2cf645e4710"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is designed to find the minimum of an n-dimensional function.  <br /></td></tr>
 <tr class="separator:aa74f1b8bf1b7bf94b1f5e2cf645e4710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e05250a2321531db326061a23a8f916" id="r_a7e05250a2321531db326061a23a8f916"><td class="memItemLeft" align="right" valign="top">vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_det_opt.html#a7e05250a2321531db326061a23a8f916">CalcGradient</a> (vec &amp;point, <a class="el" href="class_abstr_func.html">AbstrFunc</a> &amp;Func, <a class="el" href="class_rect_area.html">RectArea</a> &amp;Shape)</td></tr>
-<tr class="memdesc:a7e05250a2321531db326061a23a8f916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод считает численно градиент функции в точке.  <br /></td></tr>
+<tr class="memdesc:a7e05250a2321531db326061a23a8f916"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates numerically the gradient of a function at a point.  <br /></td></tr>
 <tr class="separator:a7e05250a2321531db326061a23a8f916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23920cdcf918151d374775723062b3d8" id="r_a23920cdcf918151d374775723062b3d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_det_opt.html#a23920cdcf918151d374775723062b3d8">GoldenSelection</a> (double a, double b, vec &amp;gradient, vec &amp;point, <a class="el" href="class_abstr_func.html">AbstrFunc</a> *Func)</td></tr>
-<tr class="memdesc:a23920cdcf918151d374775723062b3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод (золотое сечение) считает следующий шаг направления градиентного спуска.  <br /></td></tr>
+<tr class="memdesc:a23920cdcf918151d374775723062b3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method (golden ratio) considers the next step in the direction of gradient descent.  <br /></td></tr>
 <tr class="separator:a23920cdcf918151d374775723062b3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a102b8132371f4c0504fc1973bfe912f8" id="r_a102b8132371f4c0504fc1973bfe912f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_det_opt.html#a102b8132371f4c0504fc1973bfe912f8">CountB</a> (vec &amp;point, vec &amp;gradient, <a class="el" href="class_rect_area.html">RectArea</a> &amp;Shape)</td></tr>
-<tr class="memdesc:a102b8132371f4c0504fc1973bfe912f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данный метод находит конец интервал, в котором ищем следующий шаг направления градиентного спуска.  <br /></td></tr>
+<tr class="memdesc:a102b8132371f4c0504fc1973bfe912f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method finds the end of the interval in which we are looking for the next step in the gradient descent direction.  <br /></td></tr>
 <tr class="separator:a102b8132371f4c0504fc1973bfe912f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс-наследник класса <a class="el" href="class_abstr_optimiser.html" title="Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции.">AbstrOptimiser</a>, выполняющий роль нахождения минимума функции с помощью градиентного спуска. </p>
+<div class="textblock"><p>A descendant class of the <a class="el" href="class_abstr_optimiser.html" title="Parent class - Optimizer, which is responsible for finding the minimum of a function.">AbstrOptimiser</a> class, which performs the role of finding the minimum of a function using gradient descent. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7e05250a2321531db326061a23a8f916" name="a7e05250a2321531db326061a23a8f916"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e05250a2321531db326061a23a8f916">&#9670;&#160;</a></span>CalcGradient()</h2>
@@ -140,12 +140,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Данный метод считает численно градиент функции в точке. </p>
+<p>This method calculates numerically the gradient of a function at a point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>- точка, в которой считаем градиент. </td></tr>
-    <tr><td class="paramname">Func</td><td>- функция, градиент в точке которой ищем. </td></tr>
-    <tr><td class="paramname">Shape</td><td>- параллелепипед. </td></tr>
+    <tr><td class="paramname">point</td><td>- the point at which we calculate the gradient. </td></tr>
+    <tr><td class="paramname">Func</td><td>- function, the gradient at the point of which we are looking for. </td></tr>
+    <tr><td class="paramname">Shape</td><td>- parallelepiped. </td></tr>
   </table>
   </dd>
 </dl>
@@ -184,12 +184,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Данный метод находит конец интервал, в котором ищем следующий шаг направления градиентного спуска. </p>
+<p>This method finds the end of the interval in which we are looking for the next step in the gradient descent direction. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>- текущая точка направления. </td></tr>
-    <tr><td class="paramname">gradient</td><td>- градиент, посчитанный в точке. </td></tr>
-    <tr><td class="paramname">Shape</td><td>- параллелепипед. </td></tr>
+    <tr><td class="paramname">point</td><td>- current direction point. </td></tr>
+    <tr><td class="paramname">gradient</td><td>- gradient calculated at a point. </td></tr>
+    <tr><td class="paramname">Shape</td><td>- parallelepiped. </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,14 +240,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Данный метод (золотое сечение) считает следующий шаг направления градиентного спуска. </p>
+<p>This method (golden ratio) considers the next step in the direction of gradient descent. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>- начало интервала, в котором ищем следующий шаг направления градиентного спуска. </td></tr>
-    <tr><td class="paramname">b</td><td>- конец интервала, в котором ищем следующий шаг направления градиентного спуска. </td></tr>
-    <tr><td class="paramname">gradient</td><td>- градиент, посчитанный в точке. </td></tr>
-    <tr><td class="paramname">point</td><td>- текущая точка направления. </td></tr>
-    <tr><td class="paramname">Func</td><td>- функция, которую минизируем. </td></tr>
+    <tr><td class="paramname">a</td><td>is the beginning of the interval in which we are looking for the next step in the gradient descent direction. </td></tr>
+    <tr><td class="paramname">b</td><td>- the end of the interval in which we are looking for the next step in the direction of gradient descent. </td></tr>
+    <tr><td class="paramname">gradient</td><td>- gradient calculated at a point. </td></tr>
+    <tr><td class="paramname">point</td><td>- current direction point. </td></tr>
+    <tr><td class="paramname">Func</td><td>is the function that we are minimizing. </td></tr>
   </table>
   </dd>
 </dl>
@@ -300,13 +300,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Данный метод предназначен для нахождения минимума n-мерной функции. </p>
+<p>This method is designed to find the minimum of an n-dimensional function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>- начальная точка, от которой начнется поиск. </td></tr>
-    <tr><td class="paramname">Func</td><td>- функция, минимум которой мы ищем. </td></tr>
-    <tr><td class="paramname">S</td><td>- условие, по которому будет остановка оптимизатора. </td></tr>
-    <tr><td class="paramname">Shape</td><td>- n-мерный параллелепипед. </td></tr>
+    <tr><td class="paramname">point</td><td>- the starting point from which the search will begin. </td></tr>
+    <tr><td class="paramname">Func</td><td>is the minimum function we are looking for. </td></tr>
+    <tr><td class="paramname">S</td><td>is the condition that will cause the optimizer to stop. </td></tr>
+    <tr><td class="paramname">Shape</td><td>is an n-dimensional parallelepiped. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,8 +316,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/30041203/source/repos/Optimization Programm/<a class="el" href="_det_opt_8h_source.html">DetOpt.h</a></li>
-<li>C:/Users/30041203/source/repos/Optimization Programm/<b>DetOpt.cpp</b></li>
+<li><a class="el" href="_det_opt_8h_source.html">DetOpt.h</a></li>
+<li><b>DetOpt.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

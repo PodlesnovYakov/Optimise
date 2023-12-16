@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Optimise: C:/Users/30041203/source/repos/Optimization Programm/AbstrStop.h Source File</title>
+<title>Optimise: AbstrStop.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">C:/Users/30041203/source/repos/Optimization Programm/AbstrStop.h</div></div>
+  <div class="headertitle"><div class="title">AbstrStop.h</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
@@ -106,7 +106,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    vec&amp; GetPoint() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_abstr_stop.html#ad046b9b088c337a240604f0a9f894e53">curpoint</a>; }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> GetK() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_abstr_stop.html#a9e49eee56968c441edc2bc2495a48d91">kcur</a>; }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> GetKmax() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_abstr_stop.html#a46eeceb51c752ee08574991e47b52838">kmax</a>; }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="class_abstr_stop.html">~AbstrStop</a>(){}</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// &lt;summary&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_abstr_stop.html#a0d7a38efd5af9e288de74977bbd70dbd">norma</a>(vec&amp; f);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">protected</span>:</div>
@@ -123,16 +123,16 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="ttc" id="aclass_abstr_stop_html"><div class="ttname"><a href="class_abstr_stop.html">AbstrStop</a></div><div class="ttdoc">Родительский класс - остановка, который отвечает за остановку для нахождения минимума....</div><div class="ttdef"><b>Definition</b> AbstrStop.h:9</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_a0d7a38efd5af9e288de74977bbd70dbd"><div class="ttname"><a href="class_abstr_stop.html#a0d7a38efd5af9e288de74977bbd70dbd">AbstrStop::norma</a></div><div class="ttdeci">double norma(vec &amp;f)</div><div class="ttdoc">Данный метод ищет эвклидову норму вектора</div><div class="ttdef"><b>Definition</b> AbstrStop.cpp:3</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_a46eeceb51c752ee08574991e47b52838"><div class="ttname"><a href="class_abstr_stop.html#a46eeceb51c752ee08574991e47b52838">AbstrStop::kmax</a></div><div class="ttdeci">int kmax</div><div class="ttdoc">максимальное количество итераций</div><div class="ttdef"><b>Definition</b> AbstrStop.h:43</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_a5c185040e8cec18578ab1f18049773a5"><div class="ttname"><a href="class_abstr_stop.html#a5c185040e8cec18578ab1f18049773a5">AbstrStop::grad</a></div><div class="ttdeci">vec grad</div><div class="ttdoc">значение градиента в текущей точке</div><div class="ttdef"><b>Definition</b> AbstrStop.h:55</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_a6c713f1bc603fa70d4888908b3981617"><div class="ttname"><a href="class_abstr_stop.html#a6c713f1bc603fa70d4888908b3981617">AbstrStop::fprev</a></div><div class="ttdeci">double fprev</div><div class="ttdoc">значение функции в предыдущей найденной точке</div><div class="ttdef"><b>Definition</b> AbstrStop.h:47</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_a77629de2c2e71ddf3d9dad53c22f0897"><div class="ttname"><a href="class_abstr_stop.html#a77629de2c2e71ddf3d9dad53c22f0897">AbstrStop::eps</a></div><div class="ttdeci">double eps</div><div class="ttdoc">эпсилон, меньше которого произойдёт остановка</div><div class="ttdef"><b>Definition</b> AbstrStop.h:41</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_a9e49eee56968c441edc2bc2495a48d91"><div class="ttname"><a href="class_abstr_stop.html#a9e49eee56968c441edc2bc2495a48d91">AbstrStop::kcur</a></div><div class="ttdeci">int kcur</div><div class="ttdoc">текущее значение итерации</div><div class="ttdef"><b>Definition</b> AbstrStop.h:45</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_ab132c7e3ca316541f81b5384c5f725cf"><div class="ttname"><a href="class_abstr_stop.html#ab132c7e3ca316541f81b5384c5f725cf">AbstrStop::fcur</a></div><div class="ttdeci">double fcur</div><div class="ttdoc">значение функции в текущей найденной точке</div><div class="ttdef"><b>Definition</b> AbstrStop.h:49</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_acf563d70bb13cb25422f42662e71d3cc"><div class="ttname"><a href="class_abstr_stop.html#acf563d70bb13cb25422f42662e71d3cc">AbstrStop::prevpoint</a></div><div class="ttdeci">vec prevpoint</div><div class="ttdoc">предыдущая точка</div><div class="ttdef"><b>Definition</b> AbstrStop.h:51</div></div>
-<div class="ttc" id="aclass_abstr_stop_html_ad046b9b088c337a240604f0a9f894e53"><div class="ttname"><a href="class_abstr_stop.html#ad046b9b088c337a240604f0a9f894e53">AbstrStop::curpoint</a></div><div class="ttdeci">vec curpoint</div><div class="ttdoc">текущая точка</div><div class="ttdef"><b>Definition</b> AbstrStop.h:53</div></div>
+<div class="ttc" id="aclass_abstr_stop_html"><div class="ttname"><a href="class_abstr_stop.html">AbstrStop</a></div><div class="ttdoc">The parent class is stop, which is responsible for stopping to find the minimum. summary&gt;</div><div class="ttdef"><b>Definition</b> AbstrStop.h:9</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_a0d7a38efd5af9e288de74977bbd70dbd"><div class="ttname"><a href="class_abstr_stop.html#a0d7a38efd5af9e288de74977bbd70dbd">AbstrStop::norma</a></div><div class="ttdeci">double norma(vec &amp;f)</div><div class="ttdoc">This method searches for the Euclidean norm of the vector.</div><div class="ttdef"><b>Definition</b> AbstrStop.cpp:3</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_a46eeceb51c752ee08574991e47b52838"><div class="ttname"><a href="class_abstr_stop.html#a46eeceb51c752ee08574991e47b52838">AbstrStop::kmax</a></div><div class="ttdeci">int kmax</div><div class="ttdoc">maximum number of iterations</div><div class="ttdef"><b>Definition</b> AbstrStop.h:43</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_a5c185040e8cec18578ab1f18049773a5"><div class="ttname"><a href="class_abstr_stop.html#a5c185040e8cec18578ab1f18049773a5">AbstrStop::grad</a></div><div class="ttdeci">vec grad</div><div class="ttdoc">gradient value at the current point</div><div class="ttdef"><b>Definition</b> AbstrStop.h:55</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_a6c713f1bc603fa70d4888908b3981617"><div class="ttname"><a href="class_abstr_stop.html#a6c713f1bc603fa70d4888908b3981617">AbstrStop::fprev</a></div><div class="ttdeci">double fprev</div><div class="ttdoc">the value of the function at the previous found point</div><div class="ttdef"><b>Definition</b> AbstrStop.h:47</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_a77629de2c2e71ddf3d9dad53c22f0897"><div class="ttname"><a href="class_abstr_stop.html#a77629de2c2e71ddf3d9dad53c22f0897">AbstrStop::eps</a></div><div class="ttdeci">double eps</div><div class="ttdoc">epsilon, less than which the stop occurs</div><div class="ttdef"><b>Definition</b> AbstrStop.h:41</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_a9e49eee56968c441edc2bc2495a48d91"><div class="ttname"><a href="class_abstr_stop.html#a9e49eee56968c441edc2bc2495a48d91">AbstrStop::kcur</a></div><div class="ttdeci">int kcur</div><div class="ttdoc">current iteration value</div><div class="ttdef"><b>Definition</b> AbstrStop.h:45</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_ab132c7e3ca316541f81b5384c5f725cf"><div class="ttname"><a href="class_abstr_stop.html#ab132c7e3ca316541f81b5384c5f725cf">AbstrStop::fcur</a></div><div class="ttdeci">double fcur</div><div class="ttdoc">function value at the current found point</div><div class="ttdef"><b>Definition</b> AbstrStop.h:49</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_acf563d70bb13cb25422f42662e71d3cc"><div class="ttname"><a href="class_abstr_stop.html#acf563d70bb13cb25422f42662e71d3cc">AbstrStop::prevpoint</a></div><div class="ttdeci">vec prevpoint</div><div class="ttdoc">previous point</div><div class="ttdef"><b>Definition</b> AbstrStop.h:51</div></div>
+<div class="ttc" id="aclass_abstr_stop_html_ad046b9b088c337a240604f0a9f894e53"><div class="ttname"><a href="class_abstr_stop.html#ad046b9b088c337a240604f0a9f894e53">AbstrStop::curpoint</a></div><div class="ttdeci">vec curpoint</div><div class="ttdoc">current point</div><div class="ttdef"><b>Definition</b> AbstrStop.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

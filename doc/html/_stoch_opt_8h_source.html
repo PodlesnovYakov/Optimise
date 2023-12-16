@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Optimise: C:/Users/30041203/source/repos/Optimization Programm/StochOpt.h Source File</title>
+<title>Optimise: StochOpt.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">C:/Users/30041203/source/repos/Optimization Programm/StochOpt.h</div></div>
+  <div class="headertitle"><div class="title">StochOpt.h</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
@@ -111,14 +111,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="ttc" id="aclass_abstr_func_html"><div class="ttname"><a href="class_abstr_func.html">AbstrFunc</a></div><div class="ttdoc">Родительский класс - Функция, который отвечает за имитацию n-мерной функции.</div><div class="ttdef"><b>Definition</b> AbstrFunc.h:9</div></div>
-<div class="ttc" id="aclass_abstr_optimiser_html"><div class="ttname"><a href="class_abstr_optimiser.html">AbstrOptimiser</a></div><div class="ttdoc">Родительский класс - Оптимизатор, который отвечает за нахождения минимума функции.</div><div class="ttdef"><b>Definition</b> AbstrOptimiser.h:9</div></div>
-<div class="ttc" id="aclass_abstr_stop_html"><div class="ttname"><a href="class_abstr_stop.html">AbstrStop</a></div><div class="ttdoc">Родительский класс - остановка, который отвечает за остановку для нахождения минимума....</div><div class="ttdef"><b>Definition</b> AbstrStop.h:9</div></div>
-<div class="ttc" id="aclass_rect_area_html"><div class="ttname"><a href="class_rect_area.html">RectArea</a></div><div class="ttdoc">Класс - Параллелепипед, в котором ищется минимум функции.</div><div class="ttdef"><b>Definition</b> RectArea.h:9</div></div>
-<div class="ttc" id="aclass_stoch_opt_html"><div class="ttname"><a href="class_stoch_opt.html">StochOpt</a></div><div class="ttdoc">Класс-наследник класса AbstrOptimiser, выполняющий роль нахождения минимума функции с помощью случайн...</div><div class="ttdef"><b>Definition</b> StochOpt.h:13</div></div>
-<div class="ttc" id="aclass_stoch_opt_html_a8f9f1e4f006444d36ff24f91c1bf9a50"><div class="ttname"><a href="class_stoch_opt.html#a8f9f1e4f006444d36ff24f91c1bf9a50">StochOpt::optimise</a></div><div class="ttdeci">void optimise(vec &amp;point, AbstrFunc *Func, AbstrStop *S, RectArea &amp;Shape)</div><div class="ttdoc">Данный метод предназначен для нахождения минимума n-мерной функции.</div><div class="ttdef"><b>Definition</b> StochOpt.cpp:4</div></div>
-<div class="ttc" id="aclass_stoch_opt_html_aa12e86c70aecf83ab39ca242b7aa7c67"><div class="ttname"><a href="class_stoch_opt.html#aa12e86c70aecf83ab39ca242b7aa7c67">StochOpt::intersection</a></div><div class="ttdeci">void intersection(vec &amp;Bup, vec &amp;Bdown, RectArea &amp;Shape)</div><div class="ttdoc">Данный метод находит пересечение дельта-окрестности точки и параллелепипеда.</div><div class="ttdef"><b>Definition</b> StochOpt.cpp:41</div></div>
-<div class="ttc" id="aclass_stoch_opt_html_ab8f0aadb7645a91d3b1ceb998b31b928"><div class="ttname"><a href="class_stoch_opt.html#ab8f0aadb7645a91d3b1ceb998b31b928">StochOpt::ModelPoint</a></div><div class="ttdeci">vec ModelPoint(vec &amp;Bdown, vec &amp;Bup)</div><div class="ttdoc">Данный метод моделирует равномерно точку в пересечении дельта-окрестности точки и параллелепипеда.</div><div class="ttdef"><b>Definition</b> StochOpt.cpp:54</div></div>
+<div class="ttc" id="aclass_abstr_func_html"><div class="ttname"><a href="class_abstr_func.html">AbstrFunc</a></div><div class="ttdoc">Parent class - Function, which is responsible for simulating an n-dimensional function.</div><div class="ttdef"><b>Definition</b> AbstrFunc.h:9</div></div>
+<div class="ttc" id="aclass_abstr_optimiser_html"><div class="ttname"><a href="class_abstr_optimiser.html">AbstrOptimiser</a></div><div class="ttdoc">Parent class - Optimizer, which is responsible for finding the minimum of a function.</div><div class="ttdef"><b>Definition</b> AbstrOptimiser.h:9</div></div>
+<div class="ttc" id="aclass_abstr_stop_html"><div class="ttname"><a href="class_abstr_stop.html">AbstrStop</a></div><div class="ttdoc">The parent class is stop, which is responsible for stopping to find the minimum. summary&gt;</div><div class="ttdef"><b>Definition</b> AbstrStop.h:9</div></div>
+<div class="ttc" id="aclass_rect_area_html"><div class="ttname"><a href="class_rect_area.html">RectArea</a></div><div class="ttdoc">Class - Parallelepiped, in which the minimum function is sought.</div><div class="ttdef"><b>Definition</b> RectArea.h:9</div></div>
+<div class="ttc" id="aclass_stoch_opt_html"><div class="ttname"><a href="class_stoch_opt.html">StochOpt</a></div><div class="ttdoc">A descendant class of the AbstrOptimiser class, which performs the role of finding the minimum of a f...</div><div class="ttdef"><b>Definition</b> StochOpt.h:13</div></div>
+<div class="ttc" id="aclass_stoch_opt_html_a8f9f1e4f006444d36ff24f91c1bf9a50"><div class="ttname"><a href="class_stoch_opt.html#a8f9f1e4f006444d36ff24f91c1bf9a50">StochOpt::optimise</a></div><div class="ttdeci">void optimise(vec &amp;point, AbstrFunc *Func, AbstrStop *S, RectArea &amp;Shape)</div><div class="ttdoc">This method is designed to find the minimum of an n-dimensional function.</div><div class="ttdef"><b>Definition</b> StochOpt.cpp:4</div></div>
+<div class="ttc" id="aclass_stoch_opt_html_aa12e86c70aecf83ab39ca242b7aa7c67"><div class="ttname"><a href="class_stoch_opt.html#aa12e86c70aecf83ab39ca242b7aa7c67">StochOpt::intersection</a></div><div class="ttdeci">void intersection(vec &amp;Bup, vec &amp;Bdown, RectArea &amp;Shape)</div><div class="ttdoc">This method finds the intersection of the delta neighborhood of a point and a parallelepiped.</div><div class="ttdef"><b>Definition</b> StochOpt.cpp:41</div></div>
+<div class="ttc" id="aclass_stoch_opt_html_ab8f0aadb7645a91d3b1ceb998b31b928"><div class="ttname"><a href="class_stoch_opt.html#ab8f0aadb7645a91d3b1ceb998b31b928">StochOpt::ModelPoint</a></div><div class="ttdeci">vec ModelPoint(vec &amp;Bdown, vec &amp;Bup)</div><div class="ttdoc">This method uniformly models a point at the intersection of the delta neighborhood of a point and a p...</div><div class="ttdef"><b>Definition</b> StochOpt.cpp:54</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
