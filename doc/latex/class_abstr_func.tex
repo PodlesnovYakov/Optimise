@@ -19,13 +19,29 @@ Inheritance diagram for Abstr\+Func\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 virtual double \mbox{\hyperlink{class_abstr_func_aa373bf9bc53d6b1681ac67198728f53e}{Get\+ValF}} (vec f)=0
-\begin{DoxyCompactList}\small\item\em This method is designed to take the value of an n-\/dimensional function at a point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method is designed to take the value of an n-\/dimensional function at a point. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_abstr_func_ad5691b49f2de9c2983e9f67150af54d7}{get\+Dimension}} () const =0
+\begin{DoxyCompactList}\small\item\em This method is designed to return dimension of function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Parent class -\/ Function, which is responsible for simulating an n-\/dimensional function. 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstr_func_ad5691b49f2de9c2983e9f67150af54d7}\label{class_abstr_func_ad5691b49f2de9c2983e9f67150af54d7} 
+\index{AbstrFunc@{AbstrFunc}!getDimension@{getDimension}}
+\index{getDimension@{getDimension}!AbstrFunc@{AbstrFunc}}
+\doxysubsubsection{\texorpdfstring{getDimension()}{getDimension()}}
+{\footnotesize\ttfamily virtual int Abstr\+Func\+::get\+Dimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is designed to return dimension of function. 
+
+
+
+Implemented in \mbox{\hyperlink{class_f2_ad69a308dae98270c2078916c4766f691}{F2}}, \mbox{\hyperlink{class_f3_a0e7de433da82c86e4db19e2857d2fca3}{F3}}, and \mbox{\hyperlink{class_f4_a5075866049065817b50172266daf6353}{F4}}.
+
 \Hypertarget{class_abstr_func_aa373bf9bc53d6b1681ac67198728f53e}\label{class_abstr_func_aa373bf9bc53d6b1681ac67198728f53e} 
 \index{AbstrFunc@{AbstrFunc}!GetValF@{GetValF}}
 \index{GetValF@{GetValF}!AbstrFunc@{AbstrFunc}}
