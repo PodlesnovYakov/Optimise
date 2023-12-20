@@ -13,6 +13,10 @@ public:
 /// \param f is the point at which the function value will be taken.
 /// </summary>
 	virtual double GetValF(vec f)  = 0;
+	/// <summary>
+/// \brief This method is designed to return dimension of function.
+/// </summary>
+	virtual int getDimension() const = 0;
 	~AbstrFunc() {}
 };
 
