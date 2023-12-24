@@ -8,8 +8,6 @@ class F3 :public AbstrFunc
 {
 public:
 	double GetValF(vec f) override;
-	int getDimension() const override {
-		return 3; // размерность 2D функции
-	}
+	int getDimension() const override;
 };
 
